@@ -1,0 +1,46 @@
+/*Remove the default padding and margins imposed by browsers*/
+body,
+div,
+main,
+header,
+footer,
+section,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  background-color: antiquewhite;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+main.main-content {
+  background-color: beige;
+  display: block;
+}
+
+section.main-content__main-section {
+  display: inline;
+  width: 80%;
+}
+
+aside.main-content__main-aside {
+  display: inline;
+  width: 20%;
+}
+
+footer {
+  background-color: beige;
+}

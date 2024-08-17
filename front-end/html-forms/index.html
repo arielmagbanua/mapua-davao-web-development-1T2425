@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Info</title>
+</head>
+
+<body>
+  <h1>Student Info</h1>
+  <form>
+    <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+    <input type="text" id="middle_name" name="middle_name" placeholder="Middle Name" required>
+    <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+    <br>
+    <br>
+    <div>
+      <label for="bday">Date of Birth</label>
+      <br>
+      <input type="date" id="bday" name="bday" required>
+    </div>
+    <br>
+    <div>
+      <label for="year_level">Year Level:</label>
+      <br>
+      <select name="year_level" id="year_level" required>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+        <option value="5">5th Year</option>
+        <option value="6">6th Year</option>
+        <option value="7">7th Year</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="program">Program:</label>
+      <br>
+      <select name="program" id="program" required>
+        <option value="bsece">Electronics and Communications Engineering</option>
+        <option value="bsce">Civil Engineering</option>
+        <option value="bsme">Mechanical Engineering</option>
+        <option value="bscpe" selected>Computer Engineering</option>
+        <option value="bsa">Architecture</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="about">Tell me about yourself:</label>
+      <br>
+      <textarea required name="about" id="about" rows="10" cols="56"
+        placeholder="Describe yourself in a few sentences..." wrap="hard"></textarea>
+    </div>
+    <br>
+    <input type="submit" value="save">
+  </form>
+</body>
+
+</html>
