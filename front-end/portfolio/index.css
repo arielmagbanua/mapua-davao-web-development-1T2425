@@ -1,18 +1,4 @@
 /*Remove the default padding and margins imposed by browsers*/
-body,
-div,
-main,
-header,
-footer,
-section,
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   height: 100vh;
   width: 100vw;
