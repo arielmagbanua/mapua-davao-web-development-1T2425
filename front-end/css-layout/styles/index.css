@@ -1,0 +1,122 @@
+body,
+header,
+div,
+img,
+section,
+aside,
+figure,
+main,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: cornsilk;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  position: fixed;
+  width: 100vw;
+  height: 225px;
+  background-color: antiquewhite;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header__content__logo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: start;
+}
+
+.header__content__logo-container>h1 {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+}
+
+.header__nav-links>a {
+  text-decoration: none;
+  padding: 16px;
+  font-size: large;
+  color: black;
+}
+
+.header__nav-links {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.main {
+  padding-top: 225px;
+}
+
+.footer {
+  padding: 16px;
+  background-color: beige;
+}
+
+.footer__content>p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.meals {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  padding: 8px;
+}
+
+.meals__food-images>figure {
+  width: 300px;
+  height: 200px;
+  margin: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.meals__food-images>figure>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Options: contain, cover, fill, scale-down, none */
+  object-position: center center;
+  /* Adjusts the position of the image within the container */
+}
+
+.meals__food-description {
+  padding: 16px;
+  margin: 16px;
+  font-size: larger;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  min-height: 200px;
+  box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer__content {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
