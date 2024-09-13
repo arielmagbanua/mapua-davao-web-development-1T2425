@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="name-form" action="https://www.mcm.edu.ph/">
+      Enter your name:
+      <input type="text" id="fname" size="20" />
+      <input type="submit" />
+    </form>
+
+    <script defer>
+      const nameForm = document.querySelector("form.name-form");
+
+      nameForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        fname = nameForm.fname.value;
+        alert("Hello " + fname + "! You will now be redirected to mcm.edu.ph");
+      });
+    </script>
+  </body>
+</html>
