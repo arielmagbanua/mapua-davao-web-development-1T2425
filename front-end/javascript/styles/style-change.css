@@ -1,0 +1,12 @@
+.demo {
+  width: 500px;
+  height: 300px;
+  background-color: cadetblue;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+
+.my-class {
+  background-color: brown;
+  color: white;
+}

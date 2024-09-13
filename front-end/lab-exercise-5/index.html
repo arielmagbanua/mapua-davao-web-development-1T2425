@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Complete CSS Website</title>
+
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/extra-large-size.css" />
+    <link rel="stylesheet" href="styles/medium-size.css" />
+    <link rel="stylesheet" href="styles/small-size.css" />
+
+    <style>
+      .header__controls {
+        background-color: white;
+      }
+
+      .mode-controls {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+      }
+
+      .controls__toggle {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+      }
+
+      .mode-controls__toggle > label,
+      .mode-controls__toggle > input[type="radio"] {
+        cursor: pointer;
+      }
+
+      body.dark {
+        background-color: black;
+      }
+
+      .panel.dark {
+        background-color: #36454f;
+        color: white;
+      }
+
+      header.dark > .header__banner,
+      header.dark > .header__controls {
+        background-color: #36454f;
+        color: white;
+      }
+
+      footer.dark {
+        background-color: #36454f;
+        color: white;
+      }
+
+      nav.dark {
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__banner">
+        <h1>A Complete CSS Website</h1>
+        <p>
+          Utilize different color scheme but make sure they complement one
+          another. Fill in the necessary details as instructions in the sections
+          of this webpage.
+        </p>
+      </div>
+      <div class="header__controls">
+        <div class="mode-controls">
+          <div class="mode-controls__toggle">
+            <input id="light-mode" name="mode" type="radio" checked />
+            <label for="light-mode">Light Mode</label>
+          </div>
+
+          <div class="mode-controls__toggle">
+            <input id="dark-mode" name="mode" type="radio" />
+            <label for="dark-mode">Dark Mode</label>
+          </div>
+        </div>
+      </div>
+      <nav class="header__nav shadow-1">
+        <div class="header__nav__links">
+          <p>CPE104L</p>
+          <p>CPE107L</p>
+          <p>CPE121L</p>
+        </div>
+        <div class="header__nav__controls">
+          <p>CPE 3</p>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__content">
+        <div class="panel">
+          <div class="panel__title-container">
+            <h2 class="title">Malayan Colleges Mindanao</h2>
+            <p class="subtitle">Excellence and Relevance</p>
+          </div>
+          <div class="panel__content">
+            <figure>
+              <img
+                src="https://lh3.googleusercontent.com/p/AF1QipM_Rc6oQgfW8VV5eU7Th9M9-fSbWYqL-bZp_MpE=s1360-w1360-h1020"
+                alt="mmcm"
+              />
+            </figure>
+          </div>
+          <div class="panel__footer">
+            <p>MMCM is the best college in Mindanao</p>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel__title-container">
+            <h2 class="title">Malayan Colleges Mindanao</h2>
+            <p class="subtitle">Excellence and Relevance</p>
+          </div>
+          <div class="panel__content">
+            <figure>
+              <img
+                src="https://mcm.edu.ph/wp-content/uploads/2022/05/ME-min-scaled-1-2048x1366.jpeg"
+                alt="mmcm"
+              />
+            </figure>
+          </div>
+          <div class="panel__footer">
+            <p>MMCM is the best college in Mindanao</p>
+          </div>
+        </div>
+      </section>
+      <aside class="main__side-panels">
+        <div class="panel">
+          <div class="panel__title-container">
+            <h2 class="title">About Me</h2>
+          </div>
+          <div class="panel__content">
+            <figure>
+              <img src="https://picsum.photos/id/22/900/400" alt="mmcm" />
+            </figure>
+          </div>
+          <div class="panel__footer">
+            <p>
+              Serving as an adjunct instructor in College of Engineering and
+              Architecture
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel__title-container">
+            <h2 class="title">Favorite Foods</h2>
+          </div>
+          <div class="panel__content">
+            <figure>
+              <img src="https://picsum.photos/id/42/900/350" alt="coffee" />
+            </figure>
+            <figure>
+              <img src="https://picsum.photos/id/75/900/300" alt="grapes" />
+            </figure>
+            <figure>
+              <img src="https://picsum.photos/id/102/900/350" alt="raspberry" />
+            </figure>
+            <figure>
+              <img src="https://picsum.photos/id/112/900/300" alt="wheat" />
+            </figure>
+            <figure>
+              <img src="https://picsum.photos/id/326/900/300" alt="tea" />
+            </figure>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>Laboratory Task - Advance CSS Styling</p>
+      <p>CPE107L Software Design Laboratory</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
