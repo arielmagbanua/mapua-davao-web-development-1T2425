@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Side Validation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <figure class="login-banner">
+        <img src="assets/coffee.jpg" alt="login image" />
+      </figure>
+      <form id="login-form" novalidate>
+        <div class="input-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" />
+          <label for="email" class="email-error-label error hidden"
+            >Invalid email</label
+          >
+        </div>
+        <div class="input-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+          <label for="password" class="password-error-label error hidden"
+            >Invalid password</label
+          >
+        </div>
+        <div class="input-controls">
+          <input type="submit" value="Login" />
+        </div>
+      </form>
+    </div>
+
+    <script src="js/scripts.js" defer></script>
+  </body>
+</html>
