@@ -18,16 +18,20 @@
       <figure class="login-banner">
         <img src="assets/coffee.jpg" alt="login image" />
       </figure>
-      <form id="login-form">
+      <form id="login-form" novalidate>
         <div class="input-field">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" autocomplete="email" />
-          <label for="emal" class="error hidden">Invalid email</label>
+          <label for="email" class="email-error-label error hidden"
+            >Invalid email</label
+          >
         </div>
         <div class="input-field">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" />
-          <label for="password" class="error hidden">Invalid password</label>
+          <label for="password" class="password-error-label error hidden"
+            >Invalid password</label
+          >
         </div>
         <div class="input-controls">
           <input type="submit" value="Login" />
